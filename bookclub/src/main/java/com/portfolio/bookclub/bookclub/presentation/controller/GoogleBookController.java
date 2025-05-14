@@ -23,7 +23,7 @@ public class GoogleBookController {
     public BookSearchResponse searchBooks(@RequestParam String q) {
         return googleBookService.searchBooks(q);
     }
-
+    
     @GetMapping("/{id}")
     public BookItem getBookById(@PathVariable String id) {
         return googleBookService.getBookById(id);
