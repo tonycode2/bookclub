@@ -17,7 +17,7 @@ import lombok.Data;
 @Data
 @Table(name = "club_per_user")
 @Entity
-public class ClubPerUser {
+public class ClubByUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
