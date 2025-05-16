@@ -8,7 +8,7 @@ import lombok.Data;
 public class BookshelfByUserDto {
 
     Long id;
-    Long userId;
+    Integer userId;
     String bookId;
     Boolean isCompleted;
     Boolean isStarted;

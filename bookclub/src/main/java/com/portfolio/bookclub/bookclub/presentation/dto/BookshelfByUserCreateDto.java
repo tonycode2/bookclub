@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder
 public class BookshelfByUserCreateDto {
 
-    Long userId;
+    Integer userId;
     String bookId;
     @Builder.Default
     Boolean isCompleted = false;
