@@ -10,7 +10,7 @@ import lombok.Data;
 public class ClubByUserDto {
     
     Long id;
-    Long userId;
+    Integer userId;
     Long clubId;
     LocalDateTime joinDate;
 }

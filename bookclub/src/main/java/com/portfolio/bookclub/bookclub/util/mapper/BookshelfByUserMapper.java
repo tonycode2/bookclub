@@ -20,7 +20,7 @@ public class BookshelfByUserMapper {
     private final ModelMapper modelMapper;
     private final UserRepo userRepo;
 
-    BookshelfByUserMapper(ModelMapper modelMapper, UserRepo userRepo){
+    public BookshelfByUserMapper(ModelMapper modelMapper, UserRepo userRepo){
         this.modelMapper = modelMapper;
         this.userRepo = userRepo;
     }

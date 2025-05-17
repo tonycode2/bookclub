@@ -10,4 +10,6 @@ class BookclubApplicationTests {
 	void contextLoads() {
 	}
 
+	//Probar crear tests de los mappers
+
 }
