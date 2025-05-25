@@ -19,7 +19,7 @@ public class ClubMapper {
         this.modelMapper = modelMapper;
     }
 
-    public Club toDto(ClubDto dto){
+    public Club toEntity(ClubDto dto){
         Club entity = modelMapper.map(dto, Club.class);
         entity.setClubCategory(ClubCategory.valueOf(dto.getClubCategory()));
         log.info("Club Category mapped");
