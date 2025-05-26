@@ -8,7 +8,6 @@ import com.portfolio.bookclub.bookclub.presentation.dto.EventDto;
 public interface EventService {
     public EventDto getById(Long id);
     public List<EventDto> getAll();
-    public List<EventDto> getAllByClubID(Long id);
     public EventDto create(EventCreateDto eventCreateDto);
     public EventDto update(EventDto eventDto);
     public void delete(Long id);
