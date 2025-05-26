@@ -9,7 +9,7 @@ import lombok.Data;
 @Builder
 public class ClubByUserCreateDto {
 
-    Long userId;
+    Integer userId;
     Long clubId;
     LocalDateTime joinDate;
 }

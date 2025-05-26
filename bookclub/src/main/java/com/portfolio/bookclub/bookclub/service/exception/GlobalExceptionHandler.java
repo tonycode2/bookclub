@@ -13,4 +13,11 @@ public class GlobalExceptionHandler {
     public ApiError handleUserNotFound(UserNotFoundException ex){
         return new ApiError(ex.getMessage(), ex.getCode());
     }
+    
+    @ExceptionHandler(ClubNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiError handleClubNotFound(ClubNotFoundException ex){
+        return new ApiError(ex.getMessage(), ex.getCode());
+    }
+    
 }

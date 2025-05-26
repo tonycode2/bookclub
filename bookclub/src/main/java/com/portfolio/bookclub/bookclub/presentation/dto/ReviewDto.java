@@ -9,7 +9,7 @@ import lombok.Data;
 @Builder
 public class ReviewDto {
     Long id;
-    Long userId;
+    Integer userId;
     String bookId;
     Integer rating;
     String comment;
