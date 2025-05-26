@@ -53,7 +53,7 @@ docker-compose up -d
 
 ## 4. Architecture & Directory Structure
 
-\```
+```
 tonycode2-bookclub/
 ├── README.md
 ├── LICENSE
@@ -70,7 +70,7 @@ tonycode2-bookclub/
         │   ├── service/
         │   └── util/
         └── test/java/.../BookclubApplicationTests.java
-\```
+```
 
 ## 5. Configuration
 
