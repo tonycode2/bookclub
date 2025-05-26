@@ -7,7 +7,6 @@ import com.portfolio.bookclub.bookclub.presentation.dto.ClubDto;
 
 public interface ClubService {
     public ClubDto getById(Long id);
-    public List<ClubDto> getByUserId(Integer id);
     public List<ClubDto> getAll();
     public ClubDto create(ClubCreateDto clubCreateDto);
     public ClubDto update(ClubDto clubDto);

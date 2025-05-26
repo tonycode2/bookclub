@@ -16,6 +16,7 @@ public class ClubImpl implements ClubService{
 
     private final ClubRepo repo;
     private final ClubMapper mapper;
+    
     public ClubImpl(ClubRepo repo, ClubMapper mapper) {
         this.repo = repo;
         this.mapper = mapper;
@@ -25,13 +26,6 @@ public class ClubImpl implements ClubService{
         return repo.findById(id)
                 .map(mapper::toDto)
                 .orElse(null);
-    }
-
-    public List<ClubDto> getByUserId(Integer id) {
-        return repo.findByUserId(id)
-                .stream()
-                .map(mapper::toDto)
-                .toList();
     }
 
     public List<ClubDto> getAll() {

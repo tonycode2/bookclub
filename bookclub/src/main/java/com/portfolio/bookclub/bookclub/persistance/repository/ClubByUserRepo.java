@@ -10,4 +10,5 @@ import com.portfolio.bookclub.bookclub.persistance.entity.ClubByUser;
 @Repository
 public interface ClubByUserRepo extends JpaRepository<ClubByUser, Long>{
     Optional<ClubByUser> findByUserIdAndClubId(Integer userId, Long clubId);
+    
 }
